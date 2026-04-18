@@ -1,0 +1,35 @@
+<div class="page-container">
+  <div class="page-header">
+    <h1>Admin Dashboard</h1>
+    <p>SmartSure Insurance Overview</p>
+  </div>
+
+  <div *ngIf="loading" class="loading">Loading dashboard...</div>
+
+  <div *ngIf="stats" class="stats-grid">
+    <div class="stat-card blue">
+      <div class="stat-icon">👥</div>
+      <div class="stat-info"><h3>{{ stats.totalUsers }}</h3><p>Total Users</p></div>
+    </div>
+    <div class="stat-card green">
+      <div class="stat-icon">📋</div>
+      <div class="stat-info"><h3>{{ stats.totalPolicies }}</h3><p>Total Policies</p></div>
+    </div>
+    <div class="stat-card orange">
+      <div class="stat-icon">📝</div>
+      <div class="stat-info"><h3>{{ stats.totalClaims }}</h3><p>Total Claims</p></div>
+    </div>
+    <div class="stat-card red">
+      <div class="stat-icon">⏳</div>
+      <div class="stat-info"><h3>{{ stats.pendingClaims }}</h3><p>Pending Claims</p></div>
+    </div>
+    <div class="stat-card purple">
+      <div class="stat-icon">✅</div>
+      <div class="stat-info"><h3>{{ stats.approvedClaims }}</h3><p>Approved Claims</p></div>
+    </div>
+    <div class="stat-card teal">
+      <div class="stat-icon">💰</div>
+      <div class="stat-info"><h3>₹{{ stats.totalPremiumCollected | number }}</h3><p>Premium Collected</p></div>
+    </div>
+  </div>
+</div>

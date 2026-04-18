@@ -1,0 +1,45 @@
+<div class="page-container">
+  <div class="page-header">
+    <h1>My Claims</h1>
+    <a routerLink="/claims/new" class="btn-primary">+ New Claim</a>
+  </div>
+
+  <div *ngIf="loading" class="loading">Loading claims...</div>
+
+  <div *ngIf="!loading && claims.length === 0" class="empty-state">
+    <span class="empty-icon">📝</span>
+    <h3>No claims yet</h3>
+    <p>File a claim against your active policy</p>
+    <a routerLink="/claims/new" class="btn-primary">File Claim</a>
+  </div>
+
+  <div class="table-container" *ngIf="!loading && claims.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th>Claim Number</th>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let claim of claims">
+          <td><strong>{{ claim.claimNumber }}</strong></td>
+          <td>{{ claim.incidentDescription | slice:0:40 }}...</td>
+          <td>₹{{ claim.claimAmount | number }}</td>
+          <td><span class="badge" [class]="'badge-' + claim.status.toLowerCase()">{{ claim.status }}</span></td>
+          <td>{{ claim.createdAt | date:'mediumDate' }}</td>
+          <td>
+            <button *ngIf="claim.status === 'Draft'" class="btn-sm btn-primary" (click)="submitClaim(claim.id)">
+              Submit
+            </button>
+            <span *ngIf="claim.rejectionReason" class="rejection-reason" title="{{ claim.rejectionReason }}">ℹ️</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

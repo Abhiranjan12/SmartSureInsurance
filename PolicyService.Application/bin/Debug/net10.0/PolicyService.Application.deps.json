@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "PolicyService.Application/1.0.0": {
+        "dependencies": {
+          "PolicyService.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PolicyService.Application.dll": {}
+        }
+      },
+      "PolicyService.Domain/1.0.0": {
+        "runtime": {
+          "PolicyService.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PolicyService.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PolicyService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

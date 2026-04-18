@@ -1,0 +1,60 @@
+<div class="page-container">
+  <div class="page-header"><h1>User Management</h1></div>
+
+  <div *ngIf="loading" class="loading">Loading users...</div>
+
+  <div class="table-container" *ngIf="!loading">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Joined</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td><strong>{{ user.fullName }}</strong></td>
+          <td>{{ user.email }}</td>
+          <td><span class="badge" [class]="user.role === 'Admin' ? 'badge-admin' : 'badge-customer'">{{ user.role }}</span></td>
+          <td>{{ user.createdAt | date:'mediumDate' }}</td>
+          <td>
+            <button class="btn-sm btn-outline" (click)="openEdit(user)">Edit</button>
+            <button class="btn-sm btn-danger" (click)="deleteUser(user.id)" *ngIf="user.role !== 'Admin'">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="modal-overlay" *ngIf="selectedUser" (click)="closeModal()">
+    <div class="modal" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>Edit User</h2>
+        <button class="modal-close" (click)="closeModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div *ngIf="error" class="alert alert-error">{{ error }}</div>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" [(ngModel)]="selectedUser.fullName" />
+        </div>
+        <div class="form-group">
+          <label>Role</label>
+          <select [(ngModel)]="selectedUser.role">
+            <option value="Customer">Customer</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" (click)="closeModal()">Cancel</button>
+        <button class="btn-primary" (click)="updateUser()" [disabled]="updating">
+          {{ updating ? 'Saving...' : 'Save Changes' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

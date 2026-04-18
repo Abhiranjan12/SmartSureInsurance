@@ -1,0 +1,36 @@
+<div class="page-container">
+  <div class="page-header"><h1>All Policies</h1></div>
+  <div *ngIf="error" class="alert alert-error">{{ error }}</div>
+  <div *ngIf="loading" class="loading">Loading policies...</div>
+
+  <div class="table-container" *ngIf="!loading">
+    <table>
+      <thead>
+        <tr>
+          <th>Policy No.</th>
+          <th>Type</th>
+          <th>Coverage</th>
+          <th>Premium</th>
+          <th>Status</th>
+          <th>Valid Till</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let policy of policies">
+          <td><strong>{{ policy.policyNumber }}</strong></td>
+          <td>{{ policy.policyTypeName }}</td>
+          <td>₹{{ policy.coverageAmount | number }}</td>
+          <td>₹{{ policy.premiumAmount | number }}</td>
+          <td><span class="badge" [class]="'badge-' + policy.status.toLowerCase()">{{ policy.status }}</span></td>
+          <td>{{ policy.endDate | date:'mediumDate' }}</td>
+          <td>
+            <button class="btn-sm btn-danger" (click)="cancelPolicy(policy.id)" *ngIf="policy.status === 'Active'">
+              Cancel
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

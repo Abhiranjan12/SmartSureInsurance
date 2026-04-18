@@ -1,0 +1,11 @@
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\bin\Debug\net10.0\ClaimsService.Domain.deps.json
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\bin\Debug\net10.0\ClaimsService.Domain.dll
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\bin\Debug\net10.0\ClaimsService.Domain.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\ClaimsService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\ClaimsService.Domain.AssemblyInfoInputs.cache
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\ClaimsService.Domain.AssemblyInfo.cs
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\ClaimsService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\ClaimsService.Domain.dll
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\refint\ClaimsService.Domain.dll
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\ClaimsService.Domain.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Domain\obj\Debug\net10.0\ref\ClaimsService.Domain.dll

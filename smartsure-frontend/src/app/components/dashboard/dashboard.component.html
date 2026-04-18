@@ -1,0 +1,83 @@
+<div class="page-container">
+  <div class="page-header">
+    <h1>Welcome, {{ auth.getFullName() }} 👋</h1>
+    <p>Manage your insurance policies and claims</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card blue">
+      <div class="stat-icon">📋</div>
+      <div class="stat-info">
+        <h3>{{ policies.length }}</h3>
+        <p>Total Policies</p>
+      </div>
+    </div>
+    <div class="stat-card green">
+      <div class="stat-icon">✅</div>
+      <div class="stat-info">
+        <h3>{{ activePolicies }}</h3>
+        <p>Active Policies</p>
+      </div>
+    </div>
+    <div class="stat-card orange">
+      <div class="stat-icon">⏳</div>
+      <div class="stat-info">
+        <h3>{{ pendingClaims }}</h3>
+        <p>Pending Claims</p>
+      </div>
+    </div>
+    <div class="stat-card purple">
+      <div class="stat-icon">🎉</div>
+      <div class="stat-info">
+        <h3>{{ approvedClaims }}</h3>
+        <p>Approved Claims</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-actions">
+    <h2>Quick Actions</h2>
+    <div class="actions-grid">
+      <a routerLink="/buy-policy" class="action-card">
+        <span class="action-icon">🛒</span>
+        <span>Buy Policy</span>
+      </a>
+      <a routerLink="/claims/new" class="action-card">
+        <span class="action-icon">📝</span>
+        <span>File Claim</span>
+      </a>
+      <a routerLink="/policies" class="action-card">
+        <span class="action-icon">📄</span>
+        <span>View Policies</span>
+      </a>
+      <a routerLink="/claims" class="action-card">
+        <span class="action-icon">🔍</span>
+        <span>Track Claims</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="recent-section" *ngIf="claims.length > 0">
+    <h2>Recent Claims</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Claim Number</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let claim of claims.slice(0, 5)">
+            <td>{{ claim.claimNumber }}</td>
+            <td>₹{{ claim.claimAmount | number }}</td>
+            <td><span class="badge" [class]="'badge-' + claim.status.toLowerCase()">{{ claim.status }}</span></td>
+            <td>{{ claim.createdAt | date:'mediumDate' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

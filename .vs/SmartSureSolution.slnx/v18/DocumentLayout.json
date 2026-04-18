@@ -1,0 +1,301 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC42AE8C-2968-4C81-9CB6-CB10DE0A5AC9}|ClaimsService.Infrastructure\\ClaimsService.Infrastructure.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\claimsservice.infrastructure\\repositories\\claimdocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC42AE8C-2968-4C81-9CB6-CB10DE0A5AC9}|ClaimsService.Infrastructure\\ClaimsService.Infrastructure.csproj|solutionrelative:claimsservice.infrastructure\\repositories\\claimdocumentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{048ECC2F-2B5E-4082-83A7-697CB133B856}|ClaimsService.Application\\ClaimsService.Application.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\claimsservice.application\\services\\iclaimdocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{048ECC2F-2B5E-4082-83A7-697CB133B856}|ClaimsService.Application\\ClaimsService.Application.csproj|solutionrelative:claimsservice.application\\services\\iclaimdocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC42AE8C-2968-4C81-9CB6-CB10DE0A5AC9}|ClaimsService.Infrastructure\\ClaimsService.Infrastructure.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\claimsservice.infrastructure\\migrations\\claimsdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC42AE8C-2968-4C81-9CB6-CB10DE0A5AC9}|ClaimsService.Infrastructure\\ClaimsService.Infrastructure.csproj|solutionrelative:claimsservice.infrastructure\\migrations\\claimsdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5FEF28F-6629-4115-B220-399FFF1B485D}|AuthService.Infrastructure\\AuthService.Infrastructure.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\authservice.infrastructure\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5FEF28F-6629-4115-B220-399FFF1B485D}|AuthService.Infrastructure\\AuthService.Infrastructure.csproj|solutionrelative:authservice.infrastructure\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\authservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|solutionrelative:authservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\authservice.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|solutionrelative:authservice.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\authservice.api\\consumers\\claimapprovedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|solutionrelative:authservice.api\\consumers\\claimapprovedconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\apigateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD1BA92-67F1-4796-972B-23BE05DC2B1C}|AdminService.API\\AdminService.API.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\adminservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CD1BA92-67F1-4796-972B-23BE05DC2B1C}|AdminService.API\\AdminService.API.csproj|solutionrelative:adminservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\apigateway\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\apigateway\\apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\authservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{654F82B3-15E1-4399-9C97-CFD36D56168E}|AuthService.API\\AuthService.API.csproj|solutionrelative:authservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD1BA92-67F1-4796-972B-23BE05DC2B1C}|AdminService.API\\AdminService.API.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\adminservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CD1BA92-67F1-4796-972B-23BE05DC2B1C}|AdminService.API\\AdminService.API.csproj|solutionrelative:adminservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CD1BA92-67F1-4796-972B-23BE05DC2B1C}|AdminService.API\\AdminService.API.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\adminservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1CD1BA92-67F1-4796-972B-23BE05DC2B1C}|AdminService.API\\AdminService.API.csproj|solutionrelative:adminservice.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|c:\\users\\anjal\\downloads\\smartsuresolution\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D51D7E4-F437-4923-9981-645B342D4D20}|ApiGateway\\ApiGateway.csproj|solutionrelative:apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClaimsDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ClaimsService.Infrastructure\\Migrations\\ClaimsDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ClaimsService.Infrastructure\\Migrations\\ClaimsDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ClaimsService.Infrastructure\\Migrations\\ClaimsDbContextModelSnapshot.cs",
+              "RelativeToolTip": "ClaimsService.Infrastructure\\Migrations\\ClaimsDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T09:57:42.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.Infrastructure\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "AuthService.Infrastructure\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.Infrastructure\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "AuthService.Infrastructure\\Data\\DbSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T09:43:57.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClaimDocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ClaimsService.Application\\Services\\IClaimDocumentService.cs",
+              "RelativeDocumentMoniker": "ClaimsService.Application\\Services\\IClaimDocumentService.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ClaimsService.Application\\Services\\IClaimDocumentService.cs",
+              "RelativeToolTip": "ClaimsService.Application\\Services\\IClaimDocumentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T09:22:01.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClaimDocumentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ClaimsService.Infrastructure\\Repositories\\ClaimDocumentRepository.cs",
+              "RelativeDocumentMoniker": "ClaimsService.Infrastructure\\Repositories\\ClaimDocumentRepository.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ClaimsService.Infrastructure\\Repositories\\ClaimDocumentRepository.cs",
+              "RelativeToolTip": "ClaimsService.Infrastructure\\Repositories\\ClaimDocumentRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T09:21:34.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\Dockerfile",
+              "RelativeDocumentMoniker": "AuthService.API\\Dockerfile",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\Dockerfile",
+              "RelativeToolTip": "AuthService.API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-07T20:36:22.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AuthService.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AuthService.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T19:28:34.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClaimApprovedConsumer.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\Consumers\\ClaimApprovedConsumer.cs",
+              "RelativeDocumentMoniker": "AuthService.API\\Consumers\\ClaimApprovedConsumer.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\Consumers\\ClaimApprovedConsumer.cs",
+              "RelativeToolTip": "AuthService.API\\Consumers\\ClaimApprovedConsumer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T08:03:53.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AdminService.API\\Program.cs",
+              "RelativeDocumentMoniker": "AdminService.API\\Program.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AdminService.API\\Program.cs",
+              "RelativeToolTip": "AdminService.API\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv3EAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T07:59:11.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthService.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AuthService.API\\appsettings.json",
+              "RelativeToolTip": "AuthService.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-06T06:20:20.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "ApiGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\Program.cs",
+              "RelativeToolTip": "ApiGateway\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvzUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T06:19:34.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\Dockerfile",
+              "RelativeDocumentMoniker": "ApiGateway\\Dockerfile",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\Dockerfile",
+              "RelativeToolTip": "ApiGateway\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-06T05:09:25.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\ocelot.json",
+              "RelativeDocumentMoniker": "ApiGateway\\ocelot.json",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\ocelot.json",
+              "RelativeToolTip": "ApiGateway\\ocelot.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-06T05:09:03.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AdminService.API\\appsettings.json",
+              "RelativeDocumentMoniker": "AdminService.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AdminService.API\\appsettings.json",
+              "RelativeToolTip": "AdminService.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-06T05:09:50.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "ApiGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\appsettings.json",
+              "RelativeToolTip": "ApiGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-06T05:09:29.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApiGateway.csproj",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\ApiGateway.csproj",
+              "RelativeDocumentMoniker": "ApiGateway\\ApiGateway.csproj",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ApiGateway\\ApiGateway.csproj",
+              "RelativeToolTip": "ApiGateway\\ApiGateway.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-06T05:06:17.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AdminService.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AdminService.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\AdminService.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AdminService.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-06T04:54:53.761Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span class="brand-icon">🛡️</span>
+    <span>SmartSure</span>
+  </div>
+  <div class="navbar-links" *ngIf="auth.isLoggedIn()">
+    <ng-container *ngIf="!auth.isAdmin()">
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/policies" routerLinkActive="active">My Policies</a>
+      <a routerLink="/claims" routerLinkActive="active">My Claims</a>
+      <a routerLink="/buy-policy" routerLinkActive="active">Buy Policy</a>
+    </ng-container>
+    <ng-container *ngIf="auth.isAdmin()">
+      <a routerLink="/admin/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/admin/policies" routerLinkActive="active">Policies</a>
+      <a routerLink="/admin/claims" routerLinkActive="active">Claims</a>
+      <a routerLink="/admin/users" routerLinkActive="active">Users</a>
+      <a routerLink="/admin/reports" routerLinkActive="active">Reports</a>
+    </ng-container>
+  </div>
+  <div class="navbar-user" *ngIf="auth.isLoggedIn()">
+    <span class="user-name">{{ auth.getFullName() }}</span>
+    <span class="user-role" [class.admin-badge]="auth.isAdmin()">{{ auth.getRole() }}</span>
+    <button class="btn-logout" (click)="logout()">Logout</button>
+  </div>
+</nav>

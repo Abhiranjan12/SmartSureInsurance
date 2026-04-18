@@ -1,0 +1,75 @@
+<div class="page-container">
+  <div class="page-header"><h1>Claims Management</h1></div>
+
+  <div *ngIf="loading" class="loading">Loading claims...</div>
+
+  <div class="table-container" *ngIf="!loading">
+    <table>
+      <thead>
+        <tr>
+          <th>Claim No.</th>
+          <th>Customer</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let claim of claims">
+          <td><strong>{{ claim.claimNumber }}</strong></td>
+          <td>{{ claim.customerId | slice:0:8 }}...</td>
+          <td>₹{{ claim.claimAmount | number }}</td>
+          <td><span class="badge" [class]="'badge-' + claim.status.toLowerCase()">{{ claim.status }}</span></td>
+          <td>{{ claim.createdAt | date:'mediumDate' }}</td>
+          <td>
+            <button class="btn-sm btn-primary" (click)="openModal(claim)"
+              *ngIf="claim.status === 'Submitted' || claim.status === 'UnderReview'">
+              Review
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="modal-overlay" *ngIf="selectedClaim" (click)="closeModal()">
+    <div class="modal" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h2>Review Claim: {{ selectedClaim.claimNumber }}</h2>
+        <button class="modal-close" (click)="closeModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Description:</strong> {{ selectedClaim.incidentDescription }}</p>
+        <p><strong>Amount:</strong> ₹{{ selectedClaim.claimAmount | number }}</p>
+        <p><strong>Current Status:</strong> {{ selectedClaim.status }}</p>
+
+        <div *ngIf="error" class="alert alert-error">{{ error }}</div>
+
+        <div class="form-group">
+          <label>Update Status</label>
+          <select [(ngModel)]="newStatus">
+            <option value="">-- Select Status --</option>
+            <option value="UnderReview" *ngIf="selectedClaim.status === 'Submitted'">Under Review</option>
+            <option value="Approved" *ngIf="selectedClaim.status === 'UnderReview'">Approved</option>
+            <option value="Rejected" *ngIf="selectedClaim.status === 'UnderReview'">Rejected</option>
+          </select>
+        </div>
+        <div class="form-group" *ngIf="newStatus === 'Rejected'">
+          <label>Rejection Reason</label>
+          <textarea [(ngModel)]="rejectionReason" rows="3" placeholder="Reason for rejection..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Admin Remarks</label>
+          <textarea [(ngModel)]="adminRemarks" rows="2" placeholder="Optional remarks..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-secondary" (click)="closeModal()">Cancel</button>
+        <button class="btn-primary" (click)="updateStatus()" [disabled]="!newStatus || updating">
+          {{ updating ? 'Updating...' : 'Update Status' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

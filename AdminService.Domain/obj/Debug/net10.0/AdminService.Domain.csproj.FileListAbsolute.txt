@@ -1,0 +1,11 @@
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\bin\Debug\net10.0\AdminService.Domain.deps.json
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\bin\Debug\net10.0\AdminService.Domain.dll
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\bin\Debug\net10.0\AdminService.Domain.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\AdminService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\AdminService.Domain.AssemblyInfoInputs.cache
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\AdminService.Domain.AssemblyInfo.cs
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\AdminService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\AdminService.Domain.dll
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\refint\AdminService.Domain.dll
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\AdminService.Domain.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\AdminService.Domain\obj\Debug\net10.0\ref\AdminService.Domain.dll

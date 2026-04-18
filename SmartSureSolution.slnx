@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/gateway/">
+    <Project Path="ApiGateway/ApiGateway.csproj" Id="8d51d7e4-f437-4923-9981-645b342d4d20" />
+  </Folder>
+  <Folder Name="/services/" />
+  <Folder Name="/services/AdminService/">
+    <Project Path="AdminService.API/AdminService.API.csproj" Id="1cd1ba92-67f1-4796-972b-23be05dc2b1c" />
+    <Project Path="AdminService.Application/AdminService.Application.csproj" Id="6082ab6f-bac3-482f-b84e-e8fda6a0dc8e" />
+    <Project Path="AdminService.Domain/AdminService.Domain.csproj" Id="23d96a34-a6b1-4d09-8867-460d05057cbd" />
+    <Project Path="AdminService.Infrastructure/AdminService.Infrastructure.csproj" Id="fef8f821-1124-4858-b6b4-804bd3939ac7" />
+  </Folder>
+  <Folder Name="/services/AuthService/">
+    <Project Path="AuthService.API/AuthService.API.csproj" Id="654f82b3-15e1-4399-9c97-cfd36d56168e" />
+    <Project Path="AuthService.Application/AuthService.Application.csproj" Id="829fc0bb-370d-46b8-9ab8-256df289e3d0" />
+    <Project Path="AuthService.Domain/AuthService.Domain.csproj" Id="c12f1500-e3d1-4723-83f2-91fa4e11c9c2" />
+    <Project Path="AuthService.Infrastructure/AuthService.Infrastructure.csproj" Id="c5fef28f-6629-4115-b220-399fff1b485d" />
+  </Folder>
+  <Folder Name="/services/ClaimsService/">
+    <Project Path="ClaimsService.API/ClaimsService.API.csproj" Id="aea2ad76-ee22-4752-9c33-f6c28e0b0f22" />
+    <Project Path="ClaimsService.Application/ClaimsService.Application.csproj" Id="048ecc2f-2b5e-4082-83a7-697cb133b856" />
+    <Project Path="ClaimsService.Domain/ClaimsService.Domain.csproj" Id="156c93ea-c7a8-4283-a6f8-4e8b2e03f497" />
+    <Project Path="ClaimsService.Infrastructure/ClaimsService.Infrastructure.csproj" Id="cc42ae8c-2968-4c81-9cb6-cb10de0a5ac9" />
+  </Folder>
+  <Folder Name="/services/PolicyService/">
+    <Project Path="PolicyService.API/PolicyService.API.csproj" Id="6a985acd-b160-45ae-afe1-8cabcd1c1a5a" />
+    <Project Path="PolicyService.Application/PolicyService.Application.csproj" Id="cfedd8a4-8bc9-4186-ab8e-0613f904c6ee" />
+    <Project Path="PolicyService.Domain/PolicyService.Domain.csproj" Id="931b8686-354d-46e2-a0fd-d06e2b566cee" />
+    <Project Path="PolicyService.Infrastructure/PolicyService.Infrastructure.csproj" Id="1674caea-4418-46cd-8794-37a7e3f3eeab" />
+  </Folder>
+</Solution>

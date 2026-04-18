@@ -1,0 +1,40 @@
+<div class="page-container">
+  <div class="page-header">
+    <h1>Reports</h1>
+    <div class="generate-report">
+      <select [(ngModel)]="reportType">
+        <option value="Claims">Claims Report</option>
+        <option value="Policy">Policy Report</option>
+        <option value="Revenue">Revenue Report</option>
+        <option value="Users">Users Report</option>
+        <option value="Annual">Annual Report</option>
+      </select>
+      <button class="btn-primary" (click)="generateReport()" [disabled]="generating">
+        {{ generating ? 'Generating...' : '+ Generate Report' }}
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-error">{{ error }}</div>
+  <div *ngIf="success" class="alert alert-success">{{ success }}</div>
+  <div *ngIf="loading" class="loading">Loading reports...</div>
+
+  <div class="cards-grid" *ngIf="!loading">
+    <div *ngFor="let report of reports" class="report-card">
+      <div class="report-header">
+        <span class="report-type-badge">{{ report.reportType }}</span>
+        <span class="report-date">{{ report.generatedAt | date:'mediumDate' }}</span>
+      </div>
+      <h3>{{ report.title }}</h3>
+      <div class="report-data">
+        <pre>{{ report.data | json }}</pre>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!loading && reports.length === 0" class="empty-state">
+    <span class="empty-icon">📊</span>
+    <h3>No reports yet</h3>
+    <p>Generate your first report</p>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="page-container">
+  <div class="page-header">
+    <h1>File a Claim</h1>
+    <div class="stepper">
+      <div class="step" [class.active]="step >= 1" [class.done]="step > 1">1. Claim Details</div>
+      <div class="step-line"></div>
+      <div class="step" [class.active]="step >= 2">2. Upload & Submit</div>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-error">{{ error }}</div>
+  <div *ngIf="success" class="alert alert-success">{{ success }}</div>
+
+  <div *ngIf="step === 1" class="card">
+    <h2>Incident Details</h2>
+    <div class="form-group">
+      <label>Select Policy</label>
+      <select [(ngModel)]="policyId">
+        <option value="">-- Select Active Policy --</option>
+        <option *ngFor="let p of policies" [value]="p.id">
+          {{ p.policyNumber }} - {{ p.policyTypeName }}
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Incident Description</label>
+      <textarea [(ngModel)]="incidentDescription" rows="4" placeholder="Describe what happened..."></textarea>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Incident Date</label>
+        <input type="date" [(ngModel)]="incidentDate" [max]="today" />
+      </div>
+      <div class="form-group">
+        <label>Claim Amount (₹)</label>
+        <input type="number" [(ngModel)]="claimAmount" min="1000" />
+      </div>
+    </div>
+    <button class="btn-primary" (click)="createClaim()" [disabled]="loading || !policyId">
+      {{ loading ? 'Creating...' : 'Next →' }}
+    </button>
+  </div>
+
+  <div *ngIf="step === 2" class="card">
+    <h2>Upload Documents & Submit</h2>
+    <div class="form-group">
+      <label>Supporting Document (Optional)</label>
+      <input type="file" (change)="onFileChange($event)" accept=".pdf,.jpg,.jpeg,.png" />
+      <small>Upload FIR, medical reports, photos etc.</small>
+    </div>
+    <div class="btn-group">
+      <button class="btn-secondary" (click)="step = 1">← Back</button>
+      <button class="btn-primary" (click)="uploadAndSubmit()" [disabled]="loading">
+        {{ loading ? 'Submitting...' : '✓ Submit Claim' }}
+      </button>
+    </div>
+  </div>
+</div>

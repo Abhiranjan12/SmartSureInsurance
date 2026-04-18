@@ -1,0 +1,67 @@
+<div class="page-container">
+  <div class="page-header">
+    <h1>Buy Insurance Policy</h1>
+    <div class="stepper">
+      <div class="step" [class.active]="step >= 1" [class.done]="step > 1">1. Select Plan</div>
+      <div class="step-line"></div>
+      <div class="step" [class.active]="step >= 2" [class.done]="step > 2">2. Review & Pay</div>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-error">{{ error }}</div>
+  <div *ngIf="success" class="alert alert-success">{{ success }}</div>
+
+  <div *ngIf="step === 1" class="card">
+    <h2>Step 1: Choose Your Plan</h2>
+
+    <div class="policy-types-grid">
+      <div *ngFor="let type of policyTypes"
+           class="policy-type-card"
+           [class.selected]="selectedTypeId === type.id"
+           (click)="selectedTypeId = type.id">
+        <h3>{{ type.name }}</h3>
+        <p>{{ type.description }}</p>
+        <div class="type-meta">
+          <span>Base: ₹{{ type.basePremium | number }}</span>
+          <span>{{ type.coverageYears }} yr(s)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Coverage Amount (₹)</label>
+        <input type="number" [(ngModel)]="coverageAmount" min="100000" step="50000" />
+      </div>
+      <div class="form-group">
+        <label>Duration (Years)</label>
+        <input type="number" [(ngModel)]="durationYears" min="1" max="30" />
+      </div>
+      <div class="form-group">
+        <label>Your Age</label>
+        <input type="number" [(ngModel)]="customerAge" min="18" max="100" />
+      </div>
+    </div>
+
+    <button class="btn-primary" (click)="calculatePremium()" [disabled]="loading">
+      {{ loading ? 'Calculating...' : 'Calculate Premium →' }}
+    </button>
+  </div>
+
+  <div *ngIf="step === 2 && premiumResult" class="card">
+    <h2>Step 2: Review Your Policy</h2>
+    <div class="summary-box">
+      <div class="summary-row"><span>Policy Type</span><strong>{{ getSelectedType()?.name }}</strong></div>
+      <div class="summary-row"><span>Coverage Amount</span><strong>₹{{ premiumResult.coverageAmount | number }}</strong></div>
+      <div class="summary-row"><span>Duration</span><strong>{{ premiumResult.durationYears }} Year(s)</strong></div>
+      <div class="summary-row highlight"><span>Annual Premium</span><strong>₹{{ premiumResult.calculatedPremium | number }}</strong></div>
+      <div class="summary-row"><span>Monthly Premium</span><strong>₹{{ premiumResult.monthlyPremium | number }}</strong></div>
+    </div>
+    <div class="btn-group">
+      <button class="btn-secondary" (click)="step = 1">← Back</button>
+      <button class="btn-primary" (click)="buyPolicy()" [disabled]="loading">
+        {{ loading ? 'Processing...' : '✓ Confirm & Buy' }}
+      </button>
+    </div>
+  </div>
+</div>

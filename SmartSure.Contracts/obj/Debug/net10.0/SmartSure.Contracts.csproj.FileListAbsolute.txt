@@ -1,0 +1,12 @@
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\bin\Debug\net10.0\SmartSure.Contracts.deps.json
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\bin\Debug\net10.0\SmartSure.Contracts.dll
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\bin\Debug\net10.0\SmartSure.Contracts.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\SmartSure.Contracts.csproj.AssemblyReference.cache
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\SmartSure.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\SmartSure.Contracts.AssemblyInfoInputs.cache
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\SmartSure.Contracts.AssemblyInfo.cs
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\SmartSure.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\SmartSure.Contracts.dll
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\refint\SmartSure.Contracts.dll
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\SmartSure.Contracts.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\SmartSure.Contracts\obj\Debug\net10.0\ref\SmartSure.Contracts.dll

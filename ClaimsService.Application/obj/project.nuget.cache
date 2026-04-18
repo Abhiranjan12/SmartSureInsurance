@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LdFh3rG7tdE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\anjal\\Downloads\\SmartSureSolution\\ClaimsService.Application\\ClaimsService.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anjal\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\anjal\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
