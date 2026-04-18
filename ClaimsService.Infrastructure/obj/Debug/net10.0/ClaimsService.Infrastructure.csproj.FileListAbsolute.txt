@@ -19,3 +19,4 @@ C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Infrastructure\obj\Debu
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Infrastructure\obj\Debug\net10.0\ref\ClaimsService.Infrastructure.dll
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Infrastructure\bin\Debug\net10.0\SmartSure.Contracts.dll
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Infrastructure\bin\Debug\net10.0\SmartSure.Contracts.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Infrastructure\obj\Debug\net10.0\ClaimsService.Infrastructure.sourcelink.json

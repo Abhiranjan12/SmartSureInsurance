@@ -4,119 +4,21 @@ services:
 
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: smartsure-sqlserver
     environment:
       SA_PASSWORD: "SmartSure@123"
       ACCEPT_EULA: "Y"
     ports:
       - "1433:1433"
+    restart: unless-stopped
 
   rabbitmq:
     image: rabbitmq:management
+    container_name: smartsure-rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
-
-  auth-service:
-    build:
-      context: .
-      dockerfile: AuthService.API/Dockerfile
-    ports:
-      - "5001:8080"
-    environment:
-      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=SmartSure_AuthDb;User Id=sa;Password=SmartSure@123;TrustServerCertificate=True"
-      Jwt__Key: "SmartSure_SuperSecret_JWT_Key_2025!@#$%"
-      Jwt__Issuer: "SmartSure.AuthService"
-      Jwt__Audience: "SmartSure.Client"
-      RabbitMQ__Host: "rabbitmq"
-      RabbitMQ__Username: "guest"
-      RabbitMQ__Password: "guest"
-      Smtp__Host: "smtp.gmail.com"
-      Smtp__Port: "587"
-      Smtp__Username: "abhiranjank037@gmail.com"
-      Smtp__Password: "ureawdleeluebfcx"
-      Smtp__From: "abhiranjank037@gmail.com"
-      AdminSeed__Email: "admin@smartsure.com"
-      AdminSeed__Password: "Admin@123"
-      AdminSeed__FullName: "Super Admin"
-    depends_on:
-      - sqlserver
-      - rabbitmq
-
-  policy-service:
-    build:
-      context: .
-      dockerfile: PolicyService.API/Dockerfile
-    ports:
-      - "5002:8080"
-    environment:
-      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=SmartSure_PolicyDb;User Id=sa;Password=SmartSure@123;TrustServerCertificate=True"
-      Jwt__Key: "SmartSure_SuperSecret_JWT_Key_2025!@#$%"
-      Jwt__Issuer: "SmartSure.AuthService"
-      Jwt__Audience: "SmartSure.Client"
-      RabbitMQ__Host: "rabbitmq"
-      RabbitMQ__Username: "guest"
-      RabbitMQ__Password: "guest"
-    depends_on:
-      - sqlserver
-      - rabbitmq
-
-  claims-service:
-    build:
-      context: .
-      dockerfile: ClaimsService.API/Dockerfile
-    ports:
-      - "5003:8080"
-    environment:
-      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=SmartSure_ClaimsDb;User Id=sa;Password=SmartSure@123;TrustServerCertificate=True"
-      Jwt__Key: "SmartSure_SuperSecret_JWT_Key_2025!@#$%"
-      Jwt__Issuer: "SmartSure.AuthService"
-      Jwt__Audience: "SmartSure.Client"
-      RabbitMQ__Host: "rabbitmq"
-      RabbitMQ__Username: "guest"
-      RabbitMQ__Password: "guest"
-      Services__PolicyService: "http://policy-service:8080"
-    depends_on:
-      - sqlserver
-      - rabbitmq
-      - policy-service
-
-  admin-service:
-    build:
-      context: .
-      dockerfile: AdminService.API/Dockerfile
-    ports:
-      - "5004:8080"
-    environment:
-      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=SmartSure_AdminDb;User Id=sa;Password=SmartSure@123;TrustServerCertificate=True"
-      Jwt__Key: "SmartSure_SuperSecret_JWT_Key_2025!@#$%"
-      Jwt__Issuer: "SmartSure.AuthService"
-      Jwt__Audience: "SmartSure.Client"
-      RabbitMQ__Host: "rabbitmq"
-      RabbitMQ__Username: "guest"
-      RabbitMQ__Password: "guest"
-      Services__AuthService: "http://auth-service:8080"
-      Services__PolicyService: "http://policy-service:8080"
-      Services__ClaimsService: "http://claims-service:8080"
-    depends_on:
-      - sqlserver
-      - rabbitmq
-      - claims-service
-
-  api-gateway:
-    build:
-      context: .
-      dockerfile: ApiGateway/Dockerfile
-    ports:
-      - "5000:8080"
-    environment:
-      Jwt__Key: "SmartSure_SuperSecret_JWT_Key_2025!@#$%"
-      Jwt__Issuer: "SmartSure.AuthService"
-      Jwt__Audience: "SmartSure.Client"
-    depends_on:
-      - auth-service
-      - policy-service
-      - claims-service
-      - admin-service
+    restart: unless-stopped

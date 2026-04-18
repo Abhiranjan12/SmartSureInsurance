@@ -8,10 +8,12 @@ $services = @(
 
 foreach ($service in $services) {
     Write-Host "Starting $service..."
-    Start-Process -FilePath "dotnet" -ArgumentList "run --project .\$service\$service.csproj"
+    Start-Process -FilePath "powershell.exe" -ArgumentList "-NoExit", "-Command", "cd '$PSScriptRoot'; dotnet run --project .\$service\$service.csproj"
 }
 
 Write-Host "Starting frontend..."
-Start-Process -FilePath "cmd.exe" -ArgumentList "/c npm start" -WorkingDirectory ".\smartsure-frontend"
+Start-Process -FilePath "powershell.exe" -ArgumentList "-NoExit", "-Command", "cd '$PSScriptRoot\smartsure-frontend'; npm start"
 
-Write-Host "All services started in new windows."
+Write-Host "All services started. Each runs in its own window."
+Write-Host "Press any key to exit this launcher..."
+$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")

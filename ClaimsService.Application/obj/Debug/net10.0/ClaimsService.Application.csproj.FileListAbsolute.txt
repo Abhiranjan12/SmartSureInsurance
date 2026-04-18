@@ -13,3 +13,4 @@ C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Application\obj\Debug\n
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Application\obj\Debug\net10.0\refint\ClaimsService.Application.dll
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Application\obj\Debug\net10.0\ClaimsService.Application.pdb
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Application\obj\Debug\net10.0\ref\ClaimsService.Application.dll
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.Application\obj\Debug\net10.0\ClaimsService.Application.sourcelink.json

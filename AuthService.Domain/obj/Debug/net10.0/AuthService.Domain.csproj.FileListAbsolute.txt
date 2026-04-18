@@ -9,3 +9,4 @@ C:\Users\anjal\Downloads\SmartSureSolution\AuthService.Domain\obj\Debug\net10.0\
 C:\Users\anjal\Downloads\SmartSureSolution\AuthService.Domain\obj\Debug\net10.0\refint\AuthService.Domain.dll
 C:\Users\anjal\Downloads\SmartSureSolution\AuthService.Domain\obj\Debug\net10.0\AuthService.Domain.pdb
 C:\Users\anjal\Downloads\SmartSureSolution\AuthService.Domain\obj\Debug\net10.0\ref\AuthService.Domain.dll
+C:\Users\anjal\Downloads\SmartSureSolution\AuthService.Domain\obj\Debug\net10.0\AuthService.Domain.sourcelink.json

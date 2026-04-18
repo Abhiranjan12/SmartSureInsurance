@@ -171,3 +171,4 @@ C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.API\bin\Debug\net10.0\M
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.API\bin\Debug\net10.0\RabbitMQ.Client.dll
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.API\bin\Debug\net10.0\SmartSure.Contracts.dll
 C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.API\bin\Debug\net10.0\SmartSure.Contracts.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\ClaimsService.API\obj\Debug\net10.0\ClaimsService.API.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartSure.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e423f306900be02e1e323d925872a3bd130fbb26")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartSure.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartSure.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

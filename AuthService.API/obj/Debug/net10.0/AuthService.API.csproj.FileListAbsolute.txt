@@ -172,3 +172,4 @@ C:\Users\anjal\Downloads\SmartSureSolution\AuthService.API\bin\Debug\net10.0\Mas
 C:\Users\anjal\Downloads\SmartSureSolution\AuthService.API\bin\Debug\net10.0\RabbitMQ.Client.dll
 C:\Users\anjal\Downloads\SmartSureSolution\AuthService.API\bin\Debug\net10.0\SmartSure.Contracts.dll
 C:\Users\anjal\Downloads\SmartSureSolution\AuthService.API\bin\Debug\net10.0\SmartSure.Contracts.pdb
+C:\Users\anjal\Downloads\SmartSureSolution\AuthService.API\obj\Debug\net10.0\AuthService.API.sourcelink.json

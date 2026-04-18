@@ -748,7 +748,7 @@
             },
             "MassTransit": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[8.3.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -1107,7 +1107,7 @@
           "dependencies": {
             "MassTransit": {
               "target": "Package",
-              "version": "[9.1.0, )"
+              "version": "[8.3.0, )"
             }
           },
           "imports": [
